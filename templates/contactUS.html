@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta content="text/html;charset=windows-1251" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Contact Us" name="description">
+    <meta content="Contact Us" name="keywords">
+    <meta content="John Kibocha" name="author">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="examples/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <title>Contact Us</title>
 </head>
 <body>
-Hello
+<header>
+    <nav aria-labelledby="contactUsNavigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#aboutLTS">About <abbr title="Little Taco Shop">LTS</abbr></a></li>
+            <li><a href="index.html#ourMenu">Our Menu</a></li>
+            <li><a href="storeHours.html">Store Hours</a></li>
+        </ul>
+        <figure>
+            <img alt="Tacos viewed up close" height="260" src="img/tacos_close_up_400x260.png"
+                 title="Tasty Tacos Viewed Up-close" width="400">
+            <figcaption>Tasty Tacos Viewed Up-close</figcaption>
+        </figure>
+    </nav>
+</header>
+<main>
+    <article id="contactForm">
+        <h2>Contact Us</h2>
+        <section>
+            <fieldset>
+                <legend>Send Us A Message</legend>
+                <form action="http://httpbin.org/get" method="get">
+                    <p><label for="name">Name:</label>
+                        <input id="name" name="name" placeholder="Enter your name" required type="text"></p>
+                    <p><label for="email">Email:</label>
+                        <input id="email" name="email" placeholder="Enter your email" required type="email"></p>
+                    <p><label for="message">Message:</label></p>
+                    <p><textarea cols="30" id="message" name="message" placeholder="Enter your message" required
+                                 rows="10"></textarea></p>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                    <p>
+                        <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </fieldset>
+        </section>
+    </article>
+    <article>
+        <h2>Our Location</h2>
+        <section>
+            <address>
+                <p><strong>Little Taco Shop</strong></p>
+                <p>1234 Taco Street</p>
+                <p>Kenya, Nairobi</p>
+                <p>Phone: <a href="tel:+254-123-4567">+254-123-4567</a></p>
+                <p>Email: <a href="mailto:taco@mail.com">mailto:taco@mail.com</a></p>
+            </address>
+        </section>
+        <a href="#">Back to Top</a>
+    </article>
+    <hr>
+</main>
+<footer>
+    <p>Copyright &copy; The Little Taco Shop</p>
+</footer>
+
 </body>
 </html>
